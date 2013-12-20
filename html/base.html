@@ -1,0 +1,42 @@
+<html>
+
+<head>
+	<title>{% block title %}The Paper Route{% endblock title %}</title>
+	{% block head %}{% endblock head %}
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style>
+	{% block style %}{% endblock style %}
+	</style>
+</head>
+
+<header>
+	{% block header %}
+	<div class="topbar">
+		<img src="res/logo.png" class="topbar"><br>
+		<hr>
+<!-- 		<ul class="topbar">
+			<li class="topbar"><a href="/">home</a></li>
+			<li class="topbar"><a href="/samples">samples</a></li>
+			<li class="topbar"><a href="/faq">faq</a></li>
+			<li class="topbar"><a href="/contact">contact</a></li>
+		</ul>
+	-->	
+	<center>
+		<div class="topbar_links"><a class="topbar" href="/">home</a></div>
+		<div class="topbar_links"><a class="topbar" href="/samples">samples</a></div>
+		<div class="topbar_links"><a class="topbar" href="/faq">faq</a></div>
+		<div class="topbar_links"><a class="topbar" href="/contact">contact</a></div>
+	</center>
+
+	<hr>
+</div>
+{% endblock header %}
+</header>
+
+<body>
+	<div class="content">
+		{% block body %}{% endblock body %}
+	</div>
+</body>
+
+</html>

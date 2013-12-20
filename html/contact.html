@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+
+{% block style %}
+
+td.left {
+text-align:right;
+vertical-align: text-top;
+font-size:12;
+line-height:150%;
+}
+
+td.right {
+text-align:left;
+font-size:12;
+}
+
+form {
+position:relative;
+left:100px;
+}
+
+table.contact {
+	font-size: 12;
+	text-align:center;
+	line-height:150%;
+}
+
+a.email {
+	font-size:12;
+	text-decoration:underline;
+}
+
+a.email:hover {
+	font-size:12;
+	text-decoration:underline;
+	position:inherit;
+	bottom:inherit;
+	color:gray;
+ }
+
+span.error {
+	color:red;
+}
+
+{% endblock style %}
+
+{% block body %}
+<br>
+<center>
+<table class="contact" width="700px">
+	<tr><td>Address</td><td>Email</td><td>Phone</td></tr>
+	<tr>
+		<td>
+			The office above the garage,<br>
+			607 E. Paces Ferry Rd.<br>
+			Atlanta, GA 30305
+		</td>
+		<td><a class="email" href="mailto:ellenpaperroute@gmail.com">ellenpaperroute@gmail.com</a></td><td>404.483.2554</td>
+	</tr>
+</table>
+</center>
+<br><br>
+<form method="POST">
+	<table>
+		<tr><td class="left">Name</td><td class="right"><input value="{{name}}" type="text" name="name">{% if name_blank %}<span class="error">This is a required field.</span>{% endif %}</td></tr>
+		<tr><td class="left">Email address</td><td class="right"><input value="{{email}}" type="text" name="email">{% if email_error %}<span class="error">Please enter a valid email address.</span>{% endif %}</td></tr>
+		<tr><td class="left">Confirm Email address</td><td class="right"><input value="{{confirm_email}}" type="text" name="confirm_email">{% if email_mismatch %}<span class="error">Email addresses do not match.</span>{% endif %}</td></tr>
+		<tr><td class="left">Type of project</td><td class="right"><input value="{{project}}" type="text" name="project_type">{% if project_blank %}<span class="error">This is a required field.</span>{% endif %}</td></tr>
+		<tr><td class="left">How did you hear about<br> The Paper Route?</td><td class="right"><textarea name="reference" rows="6" cols="50">{{reference}}</textarea></td></tr>
+		<tr><td class="left">Project details</td><td class="right"><textarea name="details" rows="6" cols="50">{{details}}</textarea></td></tr>
+		<tr><td></td><td><input type="submit"></td></tr>
+	</table>
+</form>
+
+
+
+{% endblock body %}

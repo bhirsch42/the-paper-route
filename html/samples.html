@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block style %}
+
+div.samples{
+
+}
+
+img{
+	margin:5px;
+}
+
+img:hover {
+	<!-- opacity:0.9; -->
+}
+
+td.image:hover{
+	background-color:00FFFF;
+}
+
+{% endblock style %}
+
+{% block body %}
+<!-- <center>
+	<table>
+		<tr>
+			<td>
+				<table class="samples">
+					<tr><td><img src="res/aa_small.png"></td></tr>
+					<tr><td><img src="res/baseball diamond_small.png"></td></tr>
+					<tr><td><img src="res/can_small.png"></td></tr>
+				</table>
+			</td>
+
+			<td>
+				<table class="samples">
+					<tr><td><img src="res/ben_small.png"></td></tr>
+					<tr><td><img src="res/bib_small.png"></td></tr>
+					<tr><td><img src="res/die cuts_small.png"></td></tr>
+				</table>
+			</td>
+		</tr>
+	</center>
+-->
+<center>
+	Click any image to embiggen.
+	<table cellspacing="5">
+		<tr><td class="image"><a target="_blank" href="samples/zoe206"><img src="res/zoe206_small.png"></a></td><td>Blah blah blah</td></tr>
+		<tr><td>Blah Blah Blah</td><td class="image"><a target="_blank" href="samples/baseball_diamond"><img src="res/baseball_diamond_small.png"></a></td></tr>
+		<tr><td class="image"><a target="_blank" href="samples/can"><img src="res/can_small.png"></a></td><td>Blah blah blah</td></tr>
+		<tr><td>Blah blah blah</td><td class="image"><a target="_blank" href="samples/ben"><img src="res/ben_small.png"></a></td></tr>
+		<tr><td class="image"><a target="_blank" href="samples/bib"><img src="res/bib_small.png"></a></td><td>Blah blah blah</td></tr>
+		<tr><td>Blah blah blah</td><td class="image"><a target="_blank" href="samples/die_cuts"><img src="res/die_cuts_small.png"></a></td></tr>
+		<tr><td class="image"><a target="_blank" href="samples/girl_birth"><img src="res/girl_birth_small.png"></a></td><td>Blah blah blah</td></tr>
+		<tr><td>Blah blah blah</td><td class="image"><a target="_blank" href="samples/note_card"><img src="res/note_card_small.png"></a></td></tr>
+		<tr><td class="image"><a target="_blank" href="samples/rand209"><img src="res/rand209_small.png"></a></td><td>Blah blah blah</td></tr>
+		<tr><td>Blah blah blah</td><td class="image"><a target="_blank" href="samples/yo_yo208"><img src="res/yo_yo208_small.png"></a></td></tr>
+		<tr><td class="image"><a target="_blank" href="samples/aa"><img src="res/aa_small.png"></a></td><td>Blah blah blah</td></tr>
+	</table>
+</center>
+
+{% endblock body %}
