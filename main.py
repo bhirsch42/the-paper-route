@@ -27,10 +27,15 @@ class MainHandler(Handler):
     def get(self):
         self.response.write('Hello world!')
 
+class ExperimentHandler(Handler):
+	def get(self):
+		self.render('experiment.html')
+
 app = webapp2.WSGIApplication([
     ('/', FrontHandler),
     ('/samples', SamplesHandler),
     ('/contact', ContactHandler),
     ('/faq', FAQHandler),
-    (r'/samples/([a-z0-9\w]+)', SamplesZoomHandler)
+    (r'/samples/([a-z0-9\w]+)', SamplesZoomHandler),
+    ('/experimental', ExperimentHandler)
 ], debug=True)

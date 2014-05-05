@@ -1,0 +1,72 @@
+
+div.title {
+	padding: 5%;
+}
+div.section {
+	width: 100%;
+	left: 0;
+	/*background-color: white;*/
+	color: black;
+	padding: 2% 2% 2% 2%;
+	font-size: 24px;
+}
+
+h3 {
+	line-height: 200%;
+}
+
+div.break-1 {
+	  background-image: url("../res/IMG_0850.JPG");
+	  background-position: center bottom;
+	  background-attachment: fixed;
+	  background-size: cover;
+	  background-color: white;
+	  height: 70%;
+	  /*font-size: 100%;*/
+	  /*-webkit-filter: blur(5px);*/
+	  /*filter: blur(5px);*/
+}
+div.break-2 {
+	  background-image: url("../res/IMG_0849.JPG");
+	  background-position: center bottom;
+	  background-attachment: fixed;
+	  background-size: cover;
+	  background-color: white;
+	  height: 70%;
+	  /*font-size: 100%;*/
+	  /*-webkit-filter: blur(5px);*/
+	  /*filter: blur(5px);*/
+}
+div.break-3 {
+	  background-image: url("../res/IMG_0843.JPG");
+	  background-position: center bottom;
+	  background-attachment: fixed;
+	  background-size: cover;
+	  background-color: white;
+	  height: 70%;
+	  /*font-size: 100%;*/
+	  /*-webkit-filter: blur(5px);*/
+	  /*filter: blur(5px);*/
+}
+div.break-4 {
+	  background-image: url("../res/IMG_0848.JPG");
+	  background-position: center bottom;
+	  background-attachment: fixed;
+	  background-size: cover;
+	  background-color: white;
+	  height: 70%;
+	  /*font-size: 100%;*/
+	  /*-webkit-filter: blur(5px);*/
+	  /*filter: blur(5px);*/
+}
+div.break-5 {
+	  background-image: url("../res/IMG_0853.JPG");
+	  background-position: center bottom;
+	  background-attachment: fixed;
+	  background-size: cover;
+	  background-color: white;
+	  height: 70%;
+	  /*font-size: 100%;*/
+	  /*-webkit-filter: blur(5px);*/
+	  /*filter: blur(5px);*/
+}
